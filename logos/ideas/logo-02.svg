@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <title>10f Pressure safety relief valve</title>
+  <defs>
+    <linearGradient id="g10f" x1="16" y1="16" x2="240" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#002CFF"/>
+      <stop offset="0.5" stop-color="#00C8FF"/>
+      <stop offset="1" stop-color="#FF004D"/>
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="224" height="224" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="116" y="28" width="24" height="20" fill="url(#g10f)"/>
+  <rect x="100" y="48" width="56" height="14" fill="url(#g10f)"/>
+  <rect x="92" y="62" width="72" height="68" fill="url(#g10f)"/>
+  <g stroke="#FFFFFF" stroke-width="3" stroke-linecap="round">
+    <line x1="108" y1="70" x2="108" y2="122"/>
+    <line x1="124" y1="70" x2="124" y2="122"/>
+    <line x1="140" y1="70" x2="140" y2="122"/>
+    <line x1="156" y1="70" x2="156" y2="122"/>
+  </g>
+  <rect x="100" y="130" width="56" height="14" fill="url(#g10f)"/>
+  <rect x="108" y="144" width="40" height="60" fill="url(#g10f)"/>
+  <rect x="148" y="158" width="76" height="22" fill="url(#g10f)"/>
+  <rect x="216" y="148" width="16" height="42" fill="url(#g10f)"/>
+  <rect x="92" y="204" width="72" height="16" fill="url(#g10f)"/>
+</svg>
