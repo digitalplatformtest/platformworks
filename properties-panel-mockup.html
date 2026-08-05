@@ -462,7 +462,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     function buildPanel() {
       var panel = document.createElement('div');
-      panel.style.cssText = 'position:fixed;bottom:76px;right:20px;width:260px;background:#fff;border:1px solid #e6eaf1;border-radius:11px;box-shadow:0 8px 24px rgba(16,24,40,.16);padding:16px;z-index:100000;font-family:Segoe UI,Helvetica Neue,Arial,sans-serif;display:none';
+      panel.style.cssText = 'position:fixed;top:50px;right:14px;width:260px;background:#fff;border:1px solid #e6eaf1;border-radius:11px;box-shadow:0 8px 24px rgba(16,24,40,.16);padding:16px;z-index:100000;font-family:Segoe UI,Helvetica Neue,Arial,sans-serif;display:none';
 
       var title = document.createElement('div');
       title.textContent = 'Оформление';
@@ -478,8 +478,10 @@ document.addEventListener('DOMContentLoaded', async function() {
       btn.type = 'button';
       btn.title = 'Оформление';
       btn.setAttribute('aria-label', 'Открыть панель Оформление');
-      btn.style.cssText = 'position:fixed;bottom:20px;right:20px;width:44px;height:44px;border-radius:50%;border:1px solid #e6eaf1;background:#fff;box-shadow:0 4px 12px rgba(16,24,40,.12);cursor:pointer;z-index:100001;display:flex;align-items:center;justify-content:center;padding:0';
-      btn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2a6fdb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>';
+      btn.style.cssText = 'position:fixed;top:9px;right:14px;width:28px;height:28px;border-radius:6px;border:1px solid transparent;background:transparent;cursor:pointer;z-index:100001;display:flex;align-items:center;justify-content:center;padding:0;transition:background .12s,border-color .12s';
+      btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5b6472" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>';
+      btn.addEventListener('mouseenter', function () { btn.style.background = '#f2f4f7'; btn.style.borderColor = '#e6eaf1'; });
+      btn.addEventListener('mouseleave', function () { btn.style.background = 'transparent'; btn.style.borderColor = 'transparent'; });
       return btn;
     }
 
