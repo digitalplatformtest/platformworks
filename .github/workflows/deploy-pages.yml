@@ -32,6 +32,7 @@ jobs:
           mkdir -p _site
           cp .nojekyll index.html _site/
           cp -r assets _site/
+          cp -r logos videos _site/
           cp metamodel-properties-mockup.html \
              properties-docking-mockup.html \
              properties-panel-mockup.html _site/
