@@ -30,7 +30,7 @@ jobs:
         # Ship only what the site actually serves.
         run: |
           mkdir -p _site
-          cp .nojekyll index.html _site/
+          cp .nojekyll index.html editor-links.js _site/
           cp -r assets _site/
           cp -r logos videos _site/
           cp -r pid-editor _site/
